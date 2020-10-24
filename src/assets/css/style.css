@@ -37,12 +37,13 @@ body, html {
 
 #pharagraph {
   display: inline-block;
-    font-size: 16px;
-    width: 514px;
-    font-weight: 400;
-    background: rgb(60 60 255 / 11%);
-    border-radius: 13px;
+  font-size: 16px;
+  width: 514px;
+  font-weight: 400;
+  background: rgb(60 60 255 / 11%);
+  border-radius: 13px;
 }
+
 #fundo-externo {
   overflow: hidden;
   /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
@@ -76,26 +77,28 @@ body, html {
   background-color: rgba(255, 255, 255, 0.186);
   width: 100%;
 }
+
 #circle {
   margin: 15px;
-    width: 190px;
-    height: 190px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background: #fff;
-  
+  width: 190px;
+  height: 190px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background: #fff;
 }
-#where-am-i{
-  width:420px;
-  height:100px;
+
+#where-am-i {
+  width: 420px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 3em;
   color: #fff;
 }
+
 #skills {
   width: 100px;
   height: 100px;
@@ -104,7 +107,6 @@ body, html {
   align-items: center;
   font-size: 3em;
   color: #fff;
-  
 }
 
 #aligned {
@@ -123,6 +125,19 @@ body, html {
 
 p {
   margin-bottom: 1.5em;
+}
+
+.skills-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.telescope-icon {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  margin-left: 30px;
 }
 
 .main-header {
@@ -153,14 +168,16 @@ p {
 .text-header {
   border-radius: 5px;
 }
+
 .container-items {
   margin: 50px 0px 50px 0px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* carrossel */
+
 .testimonials {
   max-width: 800px;
   margin: auto;
@@ -168,17 +185,20 @@ p {
   text-align: center;
   position: relative;
 }
+
 .scroller {
   overflow-x: hidden;
   display: flex;
   scroll-snap-type: x mandatory;
 }
+
 .item {
   min-width: 100%;
   scroll-snap-align: center;
   margin-bottom: 10px;
   padding: 0 50px;
 }
+
 .item img {
   margin: 15px auto -60px;
   width: 120px;
@@ -188,6 +208,7 @@ p {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
   z-index: 2;
 }
+
 .card {
   padding: 40px 0px 40px 0px !important;
   z-index: 1;
@@ -195,14 +216,17 @@ p {
   flex-direction: column;
   justify-content: center;
 }
+
 .card p {
-    height: 200px;
-    width: 87%;
+  height: 200px;
+  width: 87%;
 }
+
 .card span {
   display: block;
   font-weight: bold;
 }
+
 .testimonials .btn {
   position: absolute;
   top: 50%;
@@ -216,31 +240,267 @@ p {
   color: white;
   font-weight: bold;
 }
-.testimonials .btn:hover{
+
+.testimonials .btn:hover {
   background-color: rgba(95, 106, 117, 0.5);
   cursor: pointer;
 }
+
 .testimonials .btn.next {
   right: 15px;
   top: 135px;
   background-color: #FFCC00;
 }
+
 .testimonials .btn.prev {
   left: 15px;
   background-color: #FFCC00;
   top: 135px;
 }
-@media screen and (max-width: 480px) {
-  .item {
-      padding: 0 30px;
-  }
-  .card {
-      padding: 80px 30px 30px;
-  }
-}
+
 #buttons {
   display: flex;
   align-items: center;
   justify-content: center;
   height: 100%;
+}
+
+@media screen and (max-width:600px) {
+  * {
+    margin: 0;
+    padding: 0;
+  }
+  /* para garantir que estes elementos ocuparão toda a tela */
+  body, html {
+    width: 100%;
+    height: 100%;
+    font-family: 'Lato', sans-serif;
+  }
+  #first-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 50px;
+  }
+  #second-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+  }
+  #third-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: rgb(60 201 255);
+    font-size: 20px;
+    font-weight: 400;
+  }
+  #fourth-line {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  #name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: yellow;
+    font-size: 40px;
+    font-weight: 600;
+  }
+  #pharagraph {
+    display: flex;
+    font-size: 20px;
+    width: 400px;
+    align-items: baseline;
+    font-weight: 400;
+    background: rgb(60 60 255 / 11%);
+    border-radius: 13px;
+    justify-content: flex-start;
+  }
+  #site {
+    overflow-x: hidden;
+    position: absolute;
+    top: 40px;
+  }
+  .main-header {
+    margin: 45px 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 95%;
+    border-radius: 25px;
+    background-color: #ffffff1f;
+    color: #fff;
+  }
+  .main-header p {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+  .main-header span {
+    font-size: 1.5em;
+    font-weight: 300;
+  }
+  .main-header h1 {
+    font-size: 2.5em;
+    font-weight: 600;
+  }
+  .text-header {
+    border-radius: 5px;
+  }
+  .container-items {
+    margin: 50px 0px 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  /* carrossel */
+  .testimonials {
+    max-width: 800px;
+    margin: auto;
+    padding: 15px;
+    text-align: center;
+    position: relative;
+  }
+  .scroller {
+    overflow-x: hidden;
+    display: flex;
+    scroll-snap-type: x mandatory;
+  }
+  .item img {
+    margin: 15px auto -60px;
+    width: 120px;
+    height: 120px;
+    border: solid 4px #ffffff;
+    border-radius: 60px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    z-index: 2;
+  }
+  .card p {
+    height: 200px;
+    width: 87%;
+  }
+  .card span {
+    display: block;
+    font-weight: bold;
+  }
+  .testimonials .btn {
+    position: absolute;
+    top: 50%;
+    height: 50px;
+    width: 50px;
+    border-radius: 25px;
+    background-color: rgba(95, 106, 117, 0.3);
+    z-index: 1;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+  }
+  .testimonials .btn:hover {
+    background-color: rgba(95, 106, 117, 0.5);
+    cursor: pointer;
+  }
+  .testimonials .btn.next {
+    right: 15px;
+    top: 135px;
+    background-color: #FFCC00;
+  }
+  .testimonials .btn.prev {
+    left: 15px;
+    background-color: #FFCC00;
+    top: 135px;
+  }
+  .item {
+    padding: 0 30px;
+  }
+  .card {
+    padding: 80px 30px 30px;
+  }
+  #fundo-externo {
+    overflow: hidden;
+    /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    /* criamos um contexto para posicionamento */
+  }
+  #fundo {
+    position: fixed;
+    /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+    width: 100%;
+    height: 100%;
+    background: #26136E;
+  }
+  #fundo img {
+    /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+    position: absolute;
+  }
+  #about-me {
+    background-color: rgba(255, 255, 255, 0.186);
+    width: 100%;
+  }
+  #circle {
+    margin: 15px;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+  }
+  #imgCircle {
+    width: 100px;
+    height: 100px;
+  }
+  #where-am-i {
+    width: 420px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: #fff;
+  }
+  #skills {
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3em;
+    color: #fff;
+  }
+  #aligned {
+    display: grid;
+    width: 200px;
+  }
+  #centralize {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  p {
+    margin-bottom: 1.5em;
+  }
+  .skills-container {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: tomato;
+  }
+  
+  .telescope-icon {
+    margin-left: 0px;
+  }
+  #imgTelescope {
+    height: 80px;
+  }
 }
