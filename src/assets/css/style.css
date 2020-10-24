@@ -143,51 +143,7 @@ p {
 .text-header {
   border-radius: 5px;
 }
-/*  */
-/* .carrossel { 
-  overflow-x:hidden;
-  white-space: nowrap;
-  width: 100vw;
-  }
-  
-  .brands-brand {
-    transition: all 0.6s ease;
-    display: inline-block;
-    z-index: 1;
-    width: 100px;
-    font-size: medium;
-    font-size: initial;
-    padding-left: 10px;
-    padding-right: 10px;
-    box-sizing: border-box;
-    }
-    .brands-brand div{
-     width: 200px;
-     height: 200px;
-     background-color: red;
-     margin: 50px;
-     border: 1px solid #000;
-      }
-    
-    .brands-slide {
-    position: relative;
-    left: 0;
-    top: 0;
-    box-sizing: border-box;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin: 0px 175px 0px 0px;
-    
-  }
-  .brands-wrapper {
-    white-space: nowrap;
-    overflow: hidden;
-    font-size: 0;
-    position: relative;
-    border: 1px solid black;
-    box-sizing: border-box;
-    } */
+
 /* carrossel */
 .testimonials {
   max-width: 800px;
@@ -196,30 +152,6 @@ p {
   text-align: center;
   position: relative;
 }
-.testimonials .btn {
-  position: absolute;
-  top: 50%;
-  margin-top: 20px;
-  height: 30px;
-  width: 30px;
-  border-radius: 15px;
-  background-color: rgba(95, 106, 117, 0.3);
-  z-index: 1;
-  line-height: 30px;
-  text-align: center;
-  color: white;
-  font-weight: bold;
-}
-.testimonials .btn:hover{
-  background-color: rgba(95, 106, 117, 0.5);
-  cursor: pointer;
-}
-.testimonials .btn.next {
-  right: 15px;
-}
-.testimonials .btn.prev {
-  left: 15px;
-}
 .scroller {
   overflow-x: hidden;
   display: flex;
@@ -227,10 +159,7 @@ p {
 }
 .item {
   min-width: 100%;
-  min-height: 200px; /* To start with */
-  background-color: #EDF2F7; /* For demo */
   scroll-snap-align: center;
-  background-color: white; /* Change the value to white */
   margin-bottom: 10px;
   padding: 0 50px;
 }
@@ -244,29 +173,58 @@ p {
   z-index: 2;
 }
 .card {
-  background-color: rgb(237, 242, 247);
-  padding: 80px 40px 40px;
-  border-radius: 10px;
-  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  padding: 40px 0px 40px 0px !important;
   z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .card p {
-  font-style: italic;
-  line-height: 1.6;
+    height: 200px;
+    width: 87%;
 }
 .card span {
   display: block;
-  margin-top: 20px;
-  color: teal;
   font-weight: bold;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
+}
+.testimonials .btn {
+  position: absolute;
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  border-radius: 25px;
+  background-color: rgba(95, 106, 117, 0.3);
+  z-index: 1;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.testimonials .btn:hover{
+  background-color: rgba(95, 106, 117, 0.5);
+  cursor: pointer;
+}
+.testimonials .btn.next {
+  right: 15px;
+  top: 135px;
+  background-color: #FFCC00;
+}
+.testimonials .btn.prev {
+  left: 15px;
+  background-color: #FFCC00;
+  top: 135px;
 }
 @media screen and (max-width: 480px) {
   .item {
-  padding: 0 30px;
+      padding: 0 30px;
   }
   .card {
-  padding: 80px 30px 30px;
+      padding: 80px 30px 30px;
   }
-  }
+}
+#buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
