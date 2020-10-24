@@ -77,14 +77,24 @@ body, html {
   width: 100%;
 }
 #circle {
-  width: 200px;
-  height: 200px;
+  margin: 15px;
+    width: 190px;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: #fff;
+  
+}
+#where-am-i{
+  width:420px;
+  height:100px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 50%;
-  border: 1px solid #FFF
-  
+  font-size: 3em;
+  color: #fff;
 }
 #skills {
   width: 100px;
@@ -142,6 +152,12 @@ p {
 
 .text-header {
   border-radius: 5px;
+}
+.container-items {
+  margin: 50px 0px 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* carrossel */
