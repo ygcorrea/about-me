@@ -1,0 +1,272 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* para garantir que estes elementos ocuparão toda a tela */
+
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lato', sans-serif;
+}
+
+#first-line {
+  font-size: 35px;
+}
+
+#second-line {
+  font-size: 16px;
+}
+
+#third-line {
+  color: rgb(60, 60, 255);
+  font-weight: 400;
+}
+
+#fourth-line {
+  font-weight: 300;
+  font-size: 23px;
+}
+
+#name {
+  color: yellow;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+#pharagraph {
+  display: inline-block;
+    font-size: 16px;
+    width: 514px;
+    font-weight: 400;
+    background: rgb(60 60 255 / 11%);
+    border-radius: 13px;
+}
+#fundo-externo {
+  overflow: hidden;
+  /* para que não tenha rolagem se a imagem de fundo for maior que a tela */
+  width: 100%;
+  height: 100%;
+  position: relative;
+  /* criamos um contexto para posicionamento */
+}
+
+#fundo {
+  position: fixed;
+  /* posição fixa para que a possível rolagem da tela não revele espaços em branco */
+  width: 100%;
+  height: 100%;
+}
+
+#fundo img {
+  width: 100%;
+  /* com isso imagem ocupará toda a largura da tela. Se colocarmos height: 100% também, a imagem irá distorcer */
+  position: absolute;
+}
+
+#site {
+  overflow-x: hidden;
+  position: absolute;
+  top: 40px;
+  width: 100%;
+}
+
+#about-me {
+  background-color: rgba(255, 255, 255, 0.186);
+  width: 100%;
+}
+#circle {
+  width: 200px;
+  height: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid #FFF
+  
+}
+#skills {
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3em;
+  color: #fff;
+  
+}
+
+#aligned {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+#centralize {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  margin-bottom: 1.5em;
+}
+
+.main-header {
+  margin: 100px 25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 95%;
+  color: #fff;
+}
+
+.main-header p {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.main-header span {
+  font-size: 1.5em;
+  font-weight: 300;
+}
+
+.main-header h1 {
+  font-size: 2.5em;
+  font-weight: 600;
+}
+
+.text-header {
+  border-radius: 5px;
+}
+/*  */
+/* .carrossel { 
+  overflow-x:hidden;
+  white-space: nowrap;
+  width: 100vw;
+  }
+  
+  .brands-brand {
+    transition: all 0.6s ease;
+    display: inline-block;
+    z-index: 1;
+    width: 100px;
+    font-size: medium;
+    font-size: initial;
+    padding-left: 10px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    }
+    .brands-brand div{
+     width: 200px;
+     height: 200px;
+     background-color: red;
+     margin: 50px;
+     border: 1px solid #000;
+      }
+    
+    .brands-slide {
+    position: relative;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px 175px 0px 0px;
+    
+  }
+  .brands-wrapper {
+    white-space: nowrap;
+    overflow: hidden;
+    font-size: 0;
+    position: relative;
+    border: 1px solid black;
+    box-sizing: border-box;
+    } */
+/* carrossel */
+.testimonials {
+  max-width: 800px;
+  margin: auto;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+.testimonials .btn {
+  position: absolute;
+  top: 50%;
+  margin-top: 20px;
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background-color: rgba(95, 106, 117, 0.3);
+  z-index: 1;
+  line-height: 30px;
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+.testimonials .btn:hover{
+  background-color: rgba(95, 106, 117, 0.5);
+  cursor: pointer;
+}
+.testimonials .btn.next {
+  right: 15px;
+}
+.testimonials .btn.prev {
+  left: 15px;
+}
+.scroller {
+  overflow-x: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+}
+.item {
+  min-width: 100%;
+  min-height: 200px; /* To start with */
+  background-color: #EDF2F7; /* For demo */
+  scroll-snap-align: center;
+  background-color: white; /* Change the value to white */
+  margin-bottom: 10px;
+  padding: 0 50px;
+}
+.item img {
+  margin: 15px auto -60px;
+  width: 120px;
+  height: 120px;
+  border: solid 4px #ffffff;
+  border-radius: 60px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 2;
+}
+.card {
+  background-color: rgb(237, 242, 247);
+  padding: 80px 40px 40px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+.card p {
+  font-style: italic;
+  line-height: 1.6;
+}
+.card span {
+  display: block;
+  margin-top: 20px;
+  color: teal;
+  font-weight: bold;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+}
+@media screen and (max-width: 480px) {
+  .item {
+  padding: 0 30px;
+  }
+  .card {
+  padding: 80px 30px 30px;
+  }
+  }
